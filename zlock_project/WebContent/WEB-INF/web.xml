@@ -4,7 +4,7 @@
 <!-- front Servlet -->
 <servlet> 
    <servlet-name>ControllerAction</servlet-name> 
-   <servlet-class>com.nonage.controller.ControllerAction</servlet-class> 
+   <servlet-class>com.www.controller.ControllerAction</servlet-class> 
 </servlet> 
 <servlet-mapping> 
    <servlet-name>ControllerAction</servlet-name> 
