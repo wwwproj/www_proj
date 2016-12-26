@@ -22,6 +22,7 @@ public class ControllerAction extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		
 		loadProperties("com/www/properties/Command");
+		
 	}
 
 	private void loadProperties(String path){
@@ -30,7 +31,6 @@ public class ControllerAction extends HttpServlet {
 		while(actionEnumHome.hasMoreElements()){
 			String command = actionEnumHome.nextElement();
 			String className = rbHome.getString(command);
-			
 			try{
 			Class commandClass = Class.forName(className);
 			Object commandInstance = commandClass.newInstance();
@@ -70,8 +70,14 @@ public class ControllerAction extends HttpServlet {
 			String command = request.getRequestURI();
 			if(command.indexOf(request.getContextPath()) == 0){
 				command = command.substring(request.getContextPath().length());
+			}
+			
+			com = (Action) commandMap.get(command);
+			if (com == null) {
+				System.out.println("not found : " + command);
 				return;
 			}
+			
 			view = com.execute(request, response);
 			if(view ==  null){
 				return;
@@ -89,7 +95,6 @@ public class ControllerAction extends HttpServlet {
 		
 		
 	}
-	
 	
 	
 }

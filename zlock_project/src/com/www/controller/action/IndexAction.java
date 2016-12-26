@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 public class IndexAction implements Action{
 
 	@Override
@@ -28,6 +29,7 @@ public class IndexAction implements Action{
 		
 		request.setAttribute("newProductList", newProductList);
 		request.setAttribute("bestProductList", newProductList);*/
+		System.out.println("ddddddddddddddd");
 		return url;
 		
 	}
