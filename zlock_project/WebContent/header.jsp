@@ -63,13 +63,13 @@
 						id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="nav navbar-nav navbar-right">
-								<li class="current"><a href="#intro" id="navbar">Home</a></li>
+						<li class="current"><a href="#intro" id="navbar">Home</a></li>
 								<li><a href="#about" id="navbar">Brand</a></li>
 								<li><a href="#works" id="navbar">Cart</a></li>
 								<li><a href="#contact" id="navbar">MyPage</a></li>
 								<li><a href="#contact" id="navbar">Q&A(1:1)</a></li>
 								<li><a href="#login" id="navbar">Login</a></li>
-								<li><a href="#signup" id="navbar">SignUp</a></li>
+								<li><a href="contract.do" id="navbar">SignUp</a></li>
 							</ul>
 						</nav>
 					</div>

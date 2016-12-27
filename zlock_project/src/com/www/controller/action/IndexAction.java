@@ -29,7 +29,7 @@ public class IndexAction implements Action{
 		
 		request.setAttribute("newProductList", newProductList);
 		request.setAttribute("bestProductList", newProductList);*/
-		System.out.println("ddddddddddddddd");
+		System.out.println("indexAction return ");
 		return url;
 		
 	}

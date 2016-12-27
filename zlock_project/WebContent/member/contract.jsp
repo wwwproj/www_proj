@@ -1,8 +1,30 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>  
-<%-- <%@ include file="../header.jsp" %>	  --%>
-<%@ include file="sub_img.jsp"%> 
-<%@ include file="sub_menu.jsp" %>   
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>WWW</title>
+
+<!-- styles -->
+<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/slippry.css">
+<link href="assets/css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/color/default.css">
+<script src="assets/js/modernizr.custom.js"></script>
+
+
+<style>
+	body{
+		margin-top:295px;
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+
   <article>
     <h2>Join Us</h2>
     <form id="join" action="joinForm.do" 
@@ -194,9 +216,5 @@ method="post" name="formm">
       <input type="button" value="Next" class="submit"  onclick="go_next()" style="float: right;"> 
     </form>
   </article>
-<%-- <%@ include file="../footer.jsp" %>   --%>
-
-
-
-
-
+</body>
+</html>

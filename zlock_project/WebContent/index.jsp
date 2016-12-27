@@ -201,7 +201,7 @@
 	</script>
 
 	<script src="assets/js/custom.js"></script>
-	<script src="contactform/contactform.js"></script>
+<!-- 	<script src="contactform/contactform.js"></script> -->
 
 </body>
 </html>

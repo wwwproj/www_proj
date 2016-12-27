@@ -28,7 +28,7 @@ public class wwwServlet extends HttpServlet{
 			action.execute(request, response);
 		}else{
 			PrintWriter out = response.getWriter();
-			out.println("<h1>해당 페이지가 없습니다.");
+			out.println("<h1>해당 페이지가 없습니다.<h1>");
 			out.println("<a href=\"wwwServlet?command=index\">메인페이지로 이동</a>");
 		}
 	}

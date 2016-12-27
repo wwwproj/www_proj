@@ -16,6 +16,20 @@
 <html>
 <style>
 
+
+#con {
+	margin-right: 50px;
+}
+
+#navbar {
+	font-size: 25px;
+}
+
+.navbar-brand {
+	font-size : 30px;
+}
+
+
 </style>
 
 <head>
@@ -34,12 +48,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- ///// -->
+<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/slippry.css">
+<link href="assets/css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/color/default.css">
+<script src="assets/js/modernizr.custom.js"></script>
+
 <decorator:head />
 
 </head>
 <body>
       <!--헤더파일 들어가는 곳 시작 -->
-      <header>
+      <header >
 		<div id="navigation"
 			class="navbar navbar-inverse navbar-fixed-top default"
 			role="navigation">
@@ -52,11 +75,11 @@
 						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.jsp" style="font-size: 50px;">World
+					<a class="navbar-brand" href="index.do" style="font-size: 50px;">World
 						Wide Watch</a>
 				</div>
 
-				<div class="navigation">
+				<div >
 					<div class="collapse navbar-collapse"
 						id="bs-example-navbar-collapse-1">
 						<nav>
@@ -67,7 +90,8 @@
 								<li><a href="#contact" id="navbar">MyPage</a></li>
 								<li><a href="#contact" id="navbar">Q&A(1:1)</a></li>
 								<li><a href="#login" id="navbar">Login</a></li>
-								<li><a href="#signup" id="navbar">SignUp</a></li>
+								<li><a href="contract.do" id="navbar">SignUp</a></li>
+
 							</ul>
 						</nav>
 					</div>
@@ -75,6 +99,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</header>
 
 <!--헤더파일 들어가는 곳 끝 -->
@@ -119,9 +144,7 @@
 </div>
 </footer>
 
-<script>
 
-</script>
    
 </body>
 </html>

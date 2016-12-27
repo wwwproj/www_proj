@@ -22,6 +22,7 @@ public class ControllerAction extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		
 		loadProperties("com/www/properties/Command");
+		System.out.println("init method!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		
 	}
 
@@ -71,7 +72,7 @@ public class ControllerAction extends HttpServlet {
 			if(command.indexOf(request.getContextPath()) == 0){
 				command = command.substring(request.getContextPath().length());
 			}
-			
+			System.out.println("gggg");
 			com = (Action) commandMap.get(command);
 			if (com == null) {
 				System.out.println("not found : " + command);
@@ -79,7 +80,9 @@ public class ControllerAction extends HttpServlet {
 			}
 			
 			view = com.execute(request, response);
+			System.out.println(view);
 			if(view ==  null){
+				System.out.println("gggg3333");
 				return;
 			}
 		}catch(Throwable e){
@@ -87,6 +90,7 @@ public class ControllerAction extends HttpServlet {
 			
 		}
 		
+		System.out.println("gggg4444");
 		if(view == null)
 			return;
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
